@@ -1,4 +1,5 @@
-import API_KEY from "./apikey";
+import API_KEY from "./apikey.js";
+console.log(API_KEY);
 const DAYS_OF_THE_WEEK = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 
 const imageMap = new Map();
