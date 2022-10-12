@@ -1,4 +1,3 @@
-const API_KEY = "ba33e949943bd96dc4f1e4b7bb89762f";
 const DAYS_OF_THE_WEEK = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 
 const imageMap = new Map();
@@ -87,7 +86,7 @@ const loadCurrentForecast = ({name, main: {temp, temp_max, temp_min}, weather: [
     currentForecastElement.querySelector(".city").textContent = name;
     currentForecastElement.querySelector(".temp").textContent = formatTemperature(temp);
     currentForecastElement.querySelector(".description").textContent = description;
-    currentForecastElement.querySelector(".min-max-temp").textContent = `H: ${formatTemperature(temp_max)} L: ${formatTemperature(temp_min)}`;
+    currentForecastElement.querySelector(".min-max-temp").textContent = `H: ${formatTemperature(temp_max)}  L: ${formatTemperature(temp_min)}`;
 };
 
 const loadHourlyForecast = ({main: {temp: tempNow}, weather: [{icon: iconNow}]}, hourlyForecast) => {
